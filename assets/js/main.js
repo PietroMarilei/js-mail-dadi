@@ -5,7 +5,7 @@ const emailDatabase = ['pietro@gmail.com', 'giuliano@gmail.com', 'donato@gmail.c
 console.log(emailDatabase);
 // il nostr array
 
-document.querySelector('button').addEventListener('click', function () ) {
+document.querySelector('button').addEventListener('click', function () {
 
     if (emailDatabase.includes('pietro@gmail.com') && userEmail === ('pietro@gmail.com')) {
         console.log('ciao pietro');
@@ -25,5 +25,24 @@ document.querySelector('button').addEventListener('click', function () ) {
 
     }
 
+}
+)
 
+
+// --------- Dice Games
+
+const userDice = Math.floor(Math.random() * 6) + 1
+console.log(userDice)
+// dado dell'utente
+
+const enemyDice = Math.floor(Math.random() * 6) + 1
+console.log(enemyDice)
+
+// dado del pc
+
+if (userDice >= enemyDice) {
+    console.log('hai vinto')
+
+} else if (userDice <= enemyDice) {
+    console.log('hai perso')
 }
