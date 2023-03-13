@@ -1,11 +1,13 @@
-const userEmail = document.querySelector('input').value;
-console.log(userEmail);
+
 
 const emailDatabase = ['pietro@gmail.com', 'giuliano@gmail.com', 'donato@gmail.com', 'fabio@gmail.com']
 console.log(emailDatabase);
 // il nostr array
 
 document.querySelector('button').addEventListener('click', function () {
+
+    const userEmail = document.querySelector('input').value;
+    // console.log(userEmail);
 
     // if (emailDatabase.includes('pietro@gmail.com') && userEmail === ('pietro@gmail.com')) {
     //     console.log('ciao pietro');
@@ -29,10 +31,15 @@ document.querySelector('button').addEventListener('click', function () {
     for (let i = 0; i < emailDatabase.length; i++) {
         if (emailDatabase[i] == userEmail) {
             console.log("benvenuto")
+
+        } else if (emailDatabase[i] != userEmail) {
+            // console.log('sei nuovo da queste parti ?')
+
         } else {
-            console.log('sei nuovo da queste parti ?')
+
         }
 
+        // -----
 
     }
 
