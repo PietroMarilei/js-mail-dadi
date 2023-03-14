@@ -72,13 +72,16 @@ document.getElementById('start').addEventListener('click', function () {
 
     // dado del pc
 
-    if (userDice >= enemyDice) {
+    if (userDice > enemyDice) {
         console.log('hai vinto');
         document.getElementById('winner').innerHTML = "Hai vinto";
 
-    } else if (userDice <= enemyDice) {
+    } else if (userDice < enemyDice) {
         console.log('hai perso');
         document.getElementById('winner').innerHTML = "Hai perso";
+    } else {
+        console.log('pareggio');
+        document.getElementById('winner').innerHTML = "Pareggio";
     }
 
 })
